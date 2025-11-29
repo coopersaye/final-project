@@ -6,7 +6,7 @@
     <title>1980s - History of Video Games</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="theme-80s">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,7 +19,6 @@
     <div class="content">
         <p>The 1980s marked a revolutionary period in video game history, often called the "Golden Age of Arcade Games." This decade saw the transition from simple arcade cabinets to sophisticated home gaming systems.</p>
         
-        <!-- https://arcadeblogger.com/2017/04/14/classic-arcades-early-80s-news-reports/ -->
         <img src="images/80s-intro.jpg" alt="1980s arcade scene" class="content-image">
         
         <h2>Key Consoles</h2>
@@ -29,7 +28,6 @@
             <li><strong>Sega Master System</strong> - Sega's entry into the home console market</li>
         </ul>
         
-        <!-- https://hosatech.com/press-release/history-of-video-games/?srsltid=AfmBOoobdn3c-r4A26sLqu_AVPjqxHZFrovrIe68jhu1uHmqdjlizAWu -->
         <img src="images/80s-consoles.jpg" alt="1980s gaming consoles" class="content-image">
         
         <h2>Iconic Games</h2>
@@ -41,7 +39,6 @@
             <li><strong>Tetris (1984)</strong> - Simple yet addictive puzzle game that became a global hit</li>
         </ul>
         
-        <!-- https://en.wikipedia.org/wiki/Pac-Man -->
         <img src="images/80s-games.png" alt="Iconic 1980s video games" class="content-image">
         
         <h2>Notable Achievements</h2>
@@ -49,21 +46,31 @@
     </div>
     
     <div class="game-section">
-        <canvas id="gameCanvas80s" width="400" height="400"></canvas>
-        <div class="controller">
-            <div class="d-pad">
-                <button class="dpad-btn" data-direction="up">↑</button>
-                <button class="dpad-btn" data-direction="left">←</button>
-                <div class="dpad-center"></div>
-                <button class="dpad-btn" data-direction="right">→</button>
-                <button class="dpad-btn" data-direction="down">↓</button>
-            </div>
-            <div class="action-buttons">
-                <button class="action-btn btn-b">B</button>
-                <button class="action-btn btn-a">A</button>
+        <h2>Play Pac-Man</h2>
+        <div class="game-instructions">
+            <p><strong>How to Play:</strong></p>
+            <ul style="text-align: left; max-width: 600px; margin: 1rem auto;">
+                <li>Use the <strong>D-pad</strong> or <strong>Arrow keys</strong> (WASD also works) to move Pac-Man</li>
+                <li>Collect all yellow dots to win the game</li>
+                <li>Avoid the red ghost - if it catches you, the game is over!</li>
+                <li>Your score increases by 10 points for each dot collected</li>
+                <li>Press <strong>SPACE</strong> or <strong>ENTER</strong> to restart after game over</li>
+            </ul>
+        </div>
+        <canvas id="gameCanvas80s" width="400" height="400" 
+                aria-label="Pacman game canvas. Use arrow keys or WASD to control Pacman. Collect all dots to win."
+                role="img"></canvas>
+        <div class="controller" role="group" aria-label="Game controller">
+            <div class="d-pad" role="group" aria-label="Directional pad">
+                <button class="dpad-btn" data-direction="up" aria-label="Move up">↑</button>
+                <button class="dpad-btn" data-direction="left" aria-label="Move left">↑</button>
+                <div class="dpad-center" aria-hidden="true"></div>
+                <button class="dpad-btn" data-direction="right" aria-label="Move right">↑</button>
+                <button class="dpad-btn" data-direction="down" aria-label="Move down">↑</button>
             </div>
         </div>
     </div>
+    <script src="js/80s.js"></script>
 </body>
 </html>
 

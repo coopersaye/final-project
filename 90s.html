@@ -6,7 +6,7 @@
     <title>1990s - History of Video Games</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="theme-90s">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,7 +19,6 @@
     <div class="content">
         <p>The 1990s was a transformative decade that saw video games evolve from 2D to 3D graphics, marking a significant leap in gaming technology and storytelling capabilities.</p>
         
-        <!-- https://hosatech.com/press-release/history-of-video-games/ -->
         <img src="images/90s-intro.jpg" alt="1990s gaming evolution" class="content-image">
         
         <h2>Key Consoles</h2>
@@ -30,7 +29,6 @@
             <li><strong>Nintendo 64</strong> - Brought 3D gaming to the mainstream</li>
         </ul>
         
-        <!-- https://www.theguardian.com/games/2021/jun/23/the-15-greatest-video-games-of-the-1990s-ranked -->
         <img src="images/90s-consoles.png" alt="1990s gaming consoles" class="content-image">
         
         <h2>Iconic Games</h2>
@@ -43,7 +41,6 @@
             <li><strong>Sonic the Hedgehog (1991)</strong> - Sega's mascot and answer to Mario</li>
         </ul>
         
-        <!-- https://www.abc.net.au/news/2021-07-12/super-mario-64-new-record-most-expensive-game/100285634 -->
         <img src="images/90s-games.png" alt="Iconic 1990s video games" class="content-image">
         
         <h2>Notable Achievements</h2>
@@ -51,21 +48,30 @@
     </div>
     
     <div class="game-section">
+        <h2>Play Snake</h2>
+        <div class="game-instructions">
+            <p><strong>How to Play:</strong></p>
+            <ul style="text-align: left; max-width: 600px; margin: 1rem auto;">
+                <li>Use the <strong>D-pad</strong> or <strong>Arrow keys</strong> (WASD also works) to control the snake</li>
+                <li>Eat the glowing pink food to grow longer and increase your score</li>
+                <li>Avoid hitting the walls or your own tail - the game ends if you crash!</li>
+                <li>Your score increases by 10 points for each food eaten</li>
+                <li>The game speeds up as your score increases</li>
+                <li>Press <strong>SPACE</strong> or <strong>P</strong> to pause, and <strong>SPACE</strong> or <strong>ENTER</strong> to restart after game over</li>
+            </ul>
+        </div>
         <canvas id="gameCanvas90s" width="400" height="400"></canvas>
         <div class="controller">
             <div class="d-pad">
                 <button class="dpad-btn" data-direction="up">↑</button>
-                <button class="dpad-btn" data-direction="left">←</button>
+                <button class="dpad-btn" data-direction="left">↑</button>
                 <div class="dpad-center"></div>
-                <button class="dpad-btn" data-direction="right">→</button>
-                <button class="dpad-btn" data-direction="down">↓</button>
-            </div>
-            <div class="action-buttons">
-                <button class="action-btn btn-b">B</button>
-                <button class="action-btn btn-a">A</button>
+                <button class="dpad-btn" data-direction="right">↑</button>
+                <button class="dpad-btn" data-direction="down">↑</button>
             </div>
         </div>
     </div>
+    <script src="js/90s.js"></script>
 </body>
 </html>
 

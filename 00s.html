@@ -6,7 +6,7 @@
     <title>2000s - History of Video Games</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="theme-00s">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,7 +19,6 @@
     <div class="content">
         <p>The 2000s brought video games into the mainstream, with online gaming, improved graphics, and the emergence of new genres that would define modern gaming culture.</p>
         
-        <!-- https://www.reddit.com/r/RetroLebanon/comments/rueg1r/early_2000s_gaming_pc/ -->
         <img src="images/00s-intro.jpg" alt="2000s gaming mainstream" class="content-image">
         
         <h2>Key Consoles</h2>
@@ -32,7 +31,6 @@
             <li><strong>Nintendo Wii</strong> - Revolutionized gaming with motion controls</li>
         </ul>
         
-        <!-- https://www.reddit.com/r/2000sNostalgia/comments/1k3w3gw/what_is_your_favorite_2000s_video_game_console/ -->
         <img src="images/00s-consoles.jpg" alt="2000s gaming consoles" class="content-image">
         
         <h2>Iconic Games</h2>
@@ -45,7 +43,6 @@
             <li><strong>Wii Sports (2006)</strong> - Made gaming accessible to casual audiences</li>
         </ul>
         
-        <!-- https://dailycampus.com/2019/02/22/2019-2-22-column-ranking-the-sports-of-wii-sports/ -->
         <img src="images/00s-games.png" alt="Iconic 2000s video games" class="content-image">
         
         <h2>Notable Achievements</h2>
@@ -53,21 +50,30 @@
     </div>
     
     <div class="game-section">
+        <h2>Play 2048 Game</h2>
+        <div class="game-instructions">
+            <p><strong>How to Play:</strong></p>
+            <ul style="text-align: left; max-width: 600px; margin: 1rem auto;">
+                <li>Use the <strong>D-pad</strong> or <strong>Arrow keys</strong> to move tiles</li>
+                <li>When two tiles with the same number touch, they merge into one</li>
+                <li>After each move, a new tile (2 or 4) appears on the board</li>
+                <li>Try to create a tile with the number <strong>2048</strong> to win!</li>
+                <li>Press <strong>R key</strong> to restart the game</li>
+            </ul>
+            <div id="score00s">Score: 0</div>
+        </div>
         <canvas id="gameCanvas00s" width="400" height="400"></canvas>
         <div class="controller">
             <div class="d-pad">
                 <button class="dpad-btn" data-direction="up">↑</button>
-                <button class="dpad-btn" data-direction="left">←</button>
+                <button class="dpad-btn" data-direction="left">↑</button>
                 <div class="dpad-center"></div>
-                <button class="dpad-btn" data-direction="right">→</button>
-                <button class="dpad-btn" data-direction="down">↓</button>
-            </div>
-            <div class="action-buttons">
-                <button class="action-btn btn-b">B</button>
-                <button class="action-btn btn-a">A</button>
+                <button class="dpad-btn" data-direction="right">↑</button>
+                <button class="dpad-btn" data-direction="down">↑</button>
             </div>
         </div>
     </div>
+    <script src="js/00s.js"></script>
 </body>
 </html>
 
