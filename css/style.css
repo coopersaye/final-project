@@ -774,3 +774,15 @@ strong {
         2px 2px 0 rgba(0, 0, 0, 0.8),
         0 0 10px currentColor;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
+        transition: none;
+        scroll-behavior: auto;
+    }
+
+    .game-section h2 {
+        animation: none;
+    }
+}
