@@ -12,7 +12,7 @@ body {
     color: #fff;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
 }
 
@@ -69,7 +69,7 @@ nav a {
     border: 2px solid #00ff00;
     background: #1a1a1a;
     text-transform: uppercase;
-    font-size: 9px;
+    font-size: 11px;
     box-shadow: 4px 4px 0 #00cc00;
     position: relative;
 }
@@ -89,7 +89,7 @@ nav a:active {
 h1 {
     text-align: center;
     margin-top: 2rem;
-    font-size: 24px;
+    font-size: 28px;
     text-shadow: 
         4px 4px 0 #000,
         6px 6px 0 rgba(0, 0, 0, 0.5);
@@ -105,7 +105,7 @@ h1 {
 h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-size: 16px;
+    font-size: 20px;
     text-shadow: 
         3px 3px 0 #000,
         5px 5px 0 rgba(0, 0, 0, 0.5);
@@ -148,7 +148,7 @@ h2 {
 
 .content p {
     margin: 1.5rem 0;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.8;
 }
 
@@ -183,7 +183,7 @@ h2 {
 }
 
 .game-section h2 {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 1rem;
 }
 
@@ -343,7 +343,7 @@ canvas {
     max-width: 600px;
     margin-top: 1rem;
     color: #ccc;
-    font-size: 9px;
+    font-size: 11px;
     line-height: 1.8;
 }
 
@@ -697,7 +697,7 @@ body:not(.theme-80s):not(.theme-90s):not(.theme-00s) .content-image {
 #score00s,
 #score80s,
 #score90s {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: bold;
     padding: 1rem;
     border: 3px solid;
@@ -747,19 +747,19 @@ body.theme-00s #score90s {
 
 @media (max-width: 768px) {
     body {
-        font-size: 8px;
+        font-size: 10px;
     }
     
     h1 {
-        font-size: 18px;
+        font-size: 22px;
     }
     
     h2 {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     nav a {
-        font-size: 7px;
+        font-size: 9px;
         padding: 0.6rem 1rem;
     }
     
